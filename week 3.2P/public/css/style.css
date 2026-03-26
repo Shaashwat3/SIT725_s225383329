@@ -1,0 +1,24 @@
+body {
+  background-color: #f4f6f8;
+  font-family: Arial, sans-serif;
+}
+
+h3 {
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-title {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px;
+  font-size: 20px !important;
+}
+
+.card-content p {
+  margin-bottom: 10px;
+}

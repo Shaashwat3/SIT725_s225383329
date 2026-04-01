@@ -22,3 +22,7 @@ h3 {
 .card-content p {
   margin-bottom: 10px;
 }
+
+.modal-content h4 {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "books-mvc-mongodb",
+  "version": "1.0.0",
+  "description": "Books catalog using MVC, Express, MongoDB and Vanilla JS",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seed.js"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.22.1",
+    "mongoose": "^8.23.0"
+  }
+}

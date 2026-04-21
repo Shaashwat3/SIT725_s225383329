@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
 }
@@ -21,9 +21,29 @@ h1 {
   margin-bottom: 25px;
 }
 
+.layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.left-panel {
+  flex: 1;
+}
+
+.right-panel {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
 .books-list {
   display: grid;
-  gap: 16px;
+  gap: 12px;
 }
 
 .book-card {
@@ -31,20 +51,43 @@ h1 {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
+.book-card:hover {
+  background-color: #eef3ff;
+  transform: translateY(-2px);
+}
+
+.book-card.active {
+  border: 2px solid #1f3c88;
+  background-color: #eef3ff;
+}
+
 .book-title {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   color: #1f3c88;
 }
 
 .book-author {
-  margin: 0 0 8px;
+  margin: 0;
   color: #444;
 }
 
-.book-price {
-  margin: 0;
-  color: #444;
+.book-details h3 {
+  margin-top: 0;
+  color: #1f3c88;
+}
+
+.book-details p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
 }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Poll App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Real-Time Programming Language Poll</h1>
+
+        <div class="buttons">
+            <button onclick="vote('JavaScript')">Vote JavaScript</button>
+            <button onclick="vote('Python')">Vote Python</button>
+            <button onclick="vote('Java')">Vote Java</button>
+        </div>
+
+        <div class="results">
+            <h2>Live Results</h2>
+
+            <p>JavaScript: <span id="jsVotes">0</span></p>
+            <p>Python: <span id="pythonVotes">0</span></p>
+            <p>Java: <span id="javaVotes">0</span></p>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
